@@ -35,7 +35,7 @@ public class ShoppingMap extends CollectionModel
             return itemId;
         }
 
-        public void setItemId(int itemId) {
+        public void setItemId(int itemId)  {
             this.itemId = itemId;
         }
 

@@ -31,20 +31,17 @@ for (int i = 0 ; i< 1 ; i++)
     @Test
     public void testRemove()
     {
-        for(int i = 0;i<3; i++)
+        for(int i = 0;i<1; i++)
         {
-            String itemName = "Bread";
+            String itemName = "Milk";
             int itemId = i  ;
-            ShoppingMap Bread = new ShoppingMap(itemName,i);
+
             ShoppingMap Milk =  new ShoppingMap(itemName,i);
-            ShoppingMap Eggs =  new ShoppingMap(itemName,i);
-            shoppingItemsMap.put(i,Bread);
             shoppingItemsMap.put(i,Milk);
-            shoppingItemsMap.put(i,Eggs);
-            shoppingItemsMap.remove(i,Bread);
+            shoppingItemsMap.remove(i,Milk);
 
         }
-        Assertions.assertEquals(3 ,shoppingItemsMap.size());
+        Assertions.assertEquals(0 ,shoppingItemsMap.size());
         System.out.println("New list of shoppingItes: " +shoppingItemsMap.size() );
 
     }
